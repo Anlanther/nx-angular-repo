@@ -1,39 +1,5 @@
-/*
-Adding this leads to the following error:
-$ npx nx serve app-playground
+@use '@anlanther/core-ui' as core;
 
-> nx run app-playground:serve:development
-
-Component HMR has been enabled.
-If you encounter application reload issues, you can manually reload the page to bypass HMR and/or disable this feature with the `--no-hmr` command line option.
-Please consider reporting any issues you encounter here: https://github.com/angular/angular-cli/issues
-
-Application bundle generation failed. [1.415 seconds]
-
-✘ [ERROR] Can't find stylesheet to import.
-  ╷
-2 │ @use '@anlanther/core-ui/styles' as core;
-  │ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  ╵
-  apps/app-playground/src/styles.scss 2:1  root stylesheet [plugin angular-sass]
-
-    angular:styles/global:styles:1:8:
-      1 │ @import 'apps/app-playground/src/styles.scss';
-        ╵         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-Watch mode enabled. Watching for file changes...
-Application bundle generation failed. [0.034 seconds]
-
-✘ [ERROR] Can't find stylesheet to import.
-  ╷
-1 │ @use '@anlanther/core-ui/styles' as core;
-  │ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  ╵
-  apps/app-playground/src/styles.scss 1:1  root stylesheet [plugin angular-sass]
-
-    angular:styles/global:styles:1:8:
-      1 │ @import 'apps/app-playground/src/styles.scss';
-        ╵         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-*/
-@use '@anlanther/core-ui/styles' as core;
+:root {
+  --primary-color: core.$primary-color;
+}
