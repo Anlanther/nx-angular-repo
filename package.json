@@ -13,6 +13,8 @@
     "@angular/platform-browser": "~19.2.0",
     "@angular/platform-browser-dynamic": "~19.2.0",
     "@angular/router": "~19.2.0",
+    "@anlanther/core-styles": "^1.0.7",
+    "@anlanther/core-ui": "file:libs/core-ui",
     "rxjs": "~7.8.0",
     "zone.js": "~0.15.0"
   },

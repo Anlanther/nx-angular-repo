@@ -6,9 +6,8 @@
     "@angular/core": "^19.2.0"
   },
   "sideEffects": false,
-  "exports": {
-    ".": {
-      "sass": "./src/_index.scss"
-    }
-  }
+  "files": [
+    "src",
+    "./_index.scss"
+  ]
 }
