@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@anlanther/core-ui": ["libs/core-ui/src/index.ts"]
+      "@org/my-plugin": ["tools/my-plugin/src/index.ts"],
+      "@org/my-ui-lib": ["libs/my-ui-lib/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
